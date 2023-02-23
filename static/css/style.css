@@ -1,0 +1,26 @@
+body{
+    background-color: moccasin;
+    text-align: center;
+}
+.di{
+    background-color: burlywood;
+    width: 380px;
+    height: 400px;
+    margin: auto;
+}
+form p{
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    height: 50px;
+}
+form input{
+    height: 20px;
+    width: 200px;
+    align-items: center;
+    margin-left: 60px;
+}
+.text{
+    background-color: black;
+    color: aliceblue;
+}

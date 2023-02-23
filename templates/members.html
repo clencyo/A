@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>members page</title>
+   {% load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
-<body>
-  <form action=""method="POST">
+
+<body >
+<h1>Members page</h1>
+<div class="di">
+    <form action="" method="POST">
       {% csrf_token %}
       {{ reg_members_form.as_p }}
-      <input type="submit"name="members"value="RegisterMember">
+      <input class="txt" type="submit"name="members"value="RegisterMembers">
   </form>
+</div>
+
 {% if submit_members == "RegisterMembers" %}
     {{ name }}
     {{ age }}
